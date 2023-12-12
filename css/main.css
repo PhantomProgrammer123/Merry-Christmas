@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Poppins:wght@400;500&family=Press+Start+2P&display=swap');
+
+*{
+    overflow: hidden;
+    font-family: Poppins, sans-serif;
+    color: wheat;
+}
+
+body{
+    background: url(../images/bg.jpg), linear-gradient(45deg, red, green, blue);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bell:hover,
+.bell:active{
+    animation: shake 1s infinite ;
+}
+
+@keyframes shake {
+    0%{
+        rotate: 0deg;
+    }
+    30%{
+        rotate: 25deg;
+    }
+    60%{
+        rotate: -25deg;
+    }
+    100%{
+        rotate: 0deg;
+    }
+}
